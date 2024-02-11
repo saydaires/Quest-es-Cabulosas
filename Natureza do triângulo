@@ -18,6 +18,7 @@ programa{
 		limpa()
 
 		se((a == b) e (b == c)){
+			//(a==b) e (b==c) implica verdadeiramente que (a==c).
 			escreva("Triângulo EQUILÁTERO")
 		
 		
@@ -26,8 +27,10 @@ programa{
 			
 		
 		}senao{
+			//Se o triângulo não for equilátero ou isósceles, será escaleno.
 			escreva("Triângulo ESCALENO")
 		}
 				
 	}
 }
+
