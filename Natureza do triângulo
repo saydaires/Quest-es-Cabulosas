@@ -1,0 +1,33 @@
+programa{
+	funcao inicio(){
+		real a, b, c
+
+		escreva("Medida do lado a = ")
+		leia(a)
+
+		limpa()
+		
+		escreva("Medida do lado b = ")
+		 leia(b)
+
+		limpa()
+		
+		escreva("Medida do lado c = ")
+		leia(c)
+
+		limpa()
+
+		se((a == b) e (b == c)){
+			escreva("Triângulo EQUILÁTERO")
+		
+		
+		}senao se((a == b) ou (a == c) ou (b == c)){
+			escreva("Triângulo ISÓSCELES")
+			
+		
+		}senao{
+			escreva("Triângulo ESCALENO")
+		}
+				
+	}
+}
