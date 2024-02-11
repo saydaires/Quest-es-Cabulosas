@@ -1,0 +1,24 @@
+programa{
+	funcao inicio(){
+		real salario, salariofinal
+
+		escreva("Forneça seu salário: ")
+		leia(salario)
+
+		limpa()
+		
+		se(salario <= 1500){
+			salariofinal = salario * 1.1
+			escreva("Seu salário, com aumento de 10%, é de R$ ", salariofinal)			
+		
+		}senao se(salario <= 3000){
+			salariofinal = salario * 1.07
+			escreva("Seu salário, com aumento de 7%, é de R$ ", salariofinal)
+		
+		}senao{
+			salariofinal = salario * 1.05
+			escreva("Seu salário, com aumento de 5%, é de R$ ", salariofinal)
+			
+		}
+	}
+}
