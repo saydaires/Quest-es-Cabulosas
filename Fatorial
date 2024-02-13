@@ -1,0 +1,17 @@
+programa{
+	funcao inicio(){
+		inteiro n, i, produto
+		produto = 1
+
+		escreva("Digite um valor inteiro para 'n': ")
+		leia(n)
+
+		para(i = 1; i <= n; i = i + 1){
+
+			produto = produto * i
+		}
+
+		escreva(n, "! = ", produto)
+	}
+	
+}
