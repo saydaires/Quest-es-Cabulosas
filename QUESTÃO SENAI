@@ -1,0 +1,56 @@
+programa{
+	funcao inicio(){
+		inteiro n1, n2, n3
+
+		
+		escreva("O programa irá organizar em ordem crescente os três números inteiros que você irá digitar.")
+
+		escreva("\nDigite o número 1: ")
+		leia(n1)
+
+		escreva("Digite o número 2: ")
+		leia(n2)
+
+		escreva("Digite o número 3: ")
+		leia(n3)
+
+		limpa()
+
+		se((n1 < n2) e (n2 < n3)){
+
+			escreva("A ordem crescente dos números é: ", n1, ", ", n2, ", ", n3)
+		
+		}
+
+		se((n1 < n2) e (n2 > n3)){
+			
+			se(n1 < n3){
+				
+				escreva("A ordem crescente dos números é: ", n1, ", ", n3, ", ", n2)
+						
+		     }senao{
+		     	
+		     	escreva("A ordem crescente dos números é: ", n3, ", ", n1, ", ", n2)
+			
+		     }
+		}
+
+		se((n1 > n2) e (n2 < n3)){
+
+			se(n1 > n3){
+				
+				escreva("A ordem crescente dos números é: ", n2, ", ", n3, ", ", n1)
+			
+			}senao{
+				
+				escreva("A ordem crescente dos números é: ", n2, ", ", n1, ", ", n3)
+			}
+		}
+
+		se((n1 > n2) e (n2 > n3)){
+			
+			escreva("A ordem crescente dos números é: ", n3, ", ", n2, ", ", n1)
+		
+		}		
+	}		
+}
